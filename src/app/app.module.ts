@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 
 import { UsuarioComponent } from './usuario.component';
 import { FormsModule } from '@angular/forms';
+import {LibrosComponent} from './libros/libros.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsuarioComponent
+    UsuarioComponent,
+    LibrosComponent // para usar esta class libros.component
   ],
   imports: [
     BrowserModule,

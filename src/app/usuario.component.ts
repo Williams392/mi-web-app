@@ -7,6 +7,19 @@ import { Component } from '@angular/core';
 
 export class UsuarioComponent{
 
-  usuarioNombre = 'Williams392';
+  usuarios = ['Luis', 'Fernando', 'Maria'];
+  usuarioNombre = '';
+  visible = false;
+
+  constructor(){
+    setTimeout( ()=> {
+      this.visible = true;
+    },3000);
+
+  }
+
+  onAgregarUsuario(){ // Este es un boton:
+    this.usuarios.push(this.usuarioNombre)
+  }
 
 }

@@ -8,8 +8,9 @@
 <body>
 
   <h1>Bienvenido Usuario</h1>
-  <input type="text" [(ngModel)]="usuarioNombre"/>
-  {{usuarioNombre}}
+  <input *ngIf="visible" type="text" [(ngModel)]="usuarioNombre"/>
+  <button *ngIf="visible" (click)="onAgregarUsuario()">Agregar</button>
+  <div *ngFor="let usr of usuarios">{{usr}}</div>
 
 
 </body>
