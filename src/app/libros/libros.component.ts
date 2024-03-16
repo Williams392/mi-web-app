@@ -6,5 +6,7 @@ import {Component} from '@angular/core'
 })
 
 export class LibrosComponent{
+  libros = ['Libro 1', 'libro 2', 'libro 3'];
+
 
 }
