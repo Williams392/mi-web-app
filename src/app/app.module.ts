@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import { UsuarioComponent } from './usuario.component';
 import { FormsModule } from '@angular/forms';
 import {LibrosComponent} from './libros/libros.component'
+import {LibroComponent} from './libro/libro.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     UsuarioComponent,
-    LibrosComponent // para usar esta class libros.component
+    LibrosComponent, // para usar esta class libros.component
+    LibroComponent
   ],
   imports: [
     BrowserModule,
