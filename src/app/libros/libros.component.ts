@@ -13,4 +13,8 @@ export class LibrosComponent{
     this.libros = this.libros.filter( p => p !== libro);
   }
 
+  guardarLibro(f){
+    console.log('objeto formulario', f)
+  }
+
 }
